@@ -9,47 +9,204 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#specialties">Спеціальності</a></li>
-            <li><a href="#science">Наука</a></li>
-            <li><a href="#news">Новини</a></li>
-            <li><a href="#contact">Контакти</a></li> </ul>
-    </nav>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#specialties">Спеціальності</a></li>
+                <li class="nav-item"><a href="#science">Наука</a></li>
+                <li class="nav-item"><a href="#news">Новини</a></li>
+                <li class="nav-item"><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <img src="images/search.png" alt="Пошук" title="Пошук" class="icon-search" width="30" height="30">
+            <div class="language-switcher">
+                <img src="images/eng.png" alt="Англійська" title="Англійська" class="lang-eng" width="30" height="30">
+                <img src="images/toggle.png" alt="Перемикач" title="Перемикач" class="lang-button" width="30" height="30">
+                <img src="images/ukr.png" alt="Українська" title="Українська" class="lang-ukr" width="30" height="30">
+            </div>
+        </div>
+    </header>
     <script src="js/main.js"></script>
-    <h1>Створюй майбутнє. Тут і зараз!</h1>
-    <p>
-        Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
-        Кафедра ІКТ ХАІ - це місце, де ідеї
-        стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій
-        шлях вже сьогодні!
-    </p>
-    <h2 id="specialties">Наші спеціальності</h2>
-    <p>
-        Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних
-        та інформаційних технологій за двома
-        напрямками 172 - Електронні комунікації та радіотехніка і 126 -
-        Інформаційні системи та технології.
-    </p>
-    <h2>Якщо в числах</h2>
-    <h2 id="science">Наука та інновації</h2>
-    <p>Від аудиторії — до реального проєкту</p>
-    <p>
-        Наші студенти не просто вивчають теорію — вони беруть участь у реальних
-        проєктах, розробляють ІТ-рішення,
-        створюють стартапи та співпрацюють з компаніями-партнерами. На кафедрі
-        діють наукові гуртки, лабораторії та
-        ініціативи, де кожен може реалізувати себе ще під час навчання.
-        Дослідження, що перетворюються на продукт —
-        саме тут це можливо.
-    </p>
-    <h2>Нам довіряють</h2>
-    <h2 id="contact">Контакти</h2>
-    <p>61070, Харків, вул. Вадима Манька, 17</p>
-    <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
-    <p>Кафедра інформаційно-комунікаційних технологій No504</p>
-    <a href="mailto:k504@khai.edu">k504@khai.edu</a>
-    <a href="tel:+380995025775">+38 (099) 502-57-75</a>
-    <h2 id="news">Новини</h2>
+    <main>
+        <section id="banner" class="banner-section">
+            <h1 class="banner-title">Створюй майбутнє. Тут і зараз!</h1>
+            <p class="banner-text">
+                Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
+                Кафедра ІКТ ХАІ - це місце, де ідеї
+                стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій
+                шлях вже сьогодні!
+            </p>
+            <img src="images/banner.png" alt="Банер" title="Банер" class="banner-image">
+        </section>
+
+        <section id="specialties" class="specialties-section">
+            <h2 class="section-title">Наші спеціальності</h2>
+            <p class="section-text">
+                Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних
+                та інформаційних технологій за двома
+                напрямками 172 - Електронні комунікації та радіотехніка і 126 -
+                Інформаційні системи та технології.
+            </p>
+            <div class="specialty-cards-container">
+                <div class="specialty-card">
+                    <h3 class="specialty-number">126</h3>
+                    <p class="specialty-name">Інформаційні системи і технології</p>
+                </div>
+                <div class="specialty-card">
+                    <h3 class="specialty-number">172</h3>
+                    <p class="specialty-name">Електронні комунікації та радіотехніка</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="in-numbers" class="in-numbers-section">
+            <h2 class="section-title">Якщо в числах</h2>
+            <div class="in-numbers-container">
+                <div class="in-numbers-card">
+                    <h3 class="in-number-value">18</h3>
+                    <p class="in-number-text">Досвідченних викладачів</p>
+                </div>
+                <div class="in-numbers-card">
+                    <h3 class="in-number-value">65</h3>
+                    <p class="in-number-text">Навчальних дисциплін</p>
+                </div>
+                <div class="in-numbers-card">
+                    <h3 class="in-number-value">1200+</h3>
+                    <p class="in-number-text">Талановитих випускників</p>
+                </div>
+                <div class="in-numbers-card">
+                    <h3 class="in-number-value">Нескінченність</h3>
+                    <p class="in-number-text">Унікального досвіду</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+            <h2></h2>>
+            <div class="audio-player-container">
+                <audio controls>
+                    <source src="media/expl_MP3.mp3" type="audio/mp3">
+                    Ваш браузер не підтримує відтворення аудіо.
+                </audio>
+            </div>
+        </section>
+
+        <section id="science" class="science-section">
+            <div class="science-content">
+                <h2 class="section-title">Наука та інновації</h2>
+                <h3 class="section-subtitle">Від аудиторії — до реального проєкту</h3>
+                <p class="section-text">
+                    Наші студенти не просто вивчають теорію — вони беруть участь у реальних
+                    проєктах, розробляють ІТ-рішення,
+                    створюють стартапи та співпрацюють з компаніями-партнерами. На кафедрі
+                    діють наукові гуртки, лабораторії та
+                    ініціативи, де кожен може реалізувати себе ще під час навчання.
+                    Дослідження, що перетворюються на продукт —
+                    саме тут це можливо.
+                </p>
+                <img src="images/science.png" alt="science" class="science-image">
+            </div>
+        </section>
+
+        <section id="trust-us" class="trust-us-section">
+            <h2 class="section-title">Нам довіряють</h2>
+            <div class="trust-us-logos">
+                <img src="images/nix.svg" alt="nix logo" title="Логотип nix">
+                <img src="images/sigma.svg" alt="sigma logo" title="Логотип sigma">
+                <img src="images/gl.svg" alt="gl logo" title="Логотип gl">
+                <img src="images/epam.svg" alt="epam logo" title="Логотип epam">
+                <img src="images/softserve.svg" alt="softserve logo" title="Логотип softserve">
+                <img src="images/dataart.svg" alt="dataart logo" title="Логотип dataart">
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contact-container">
+                <address class="contact-address">
+                    <p>61070, Харків, вул. Вадима Манька, 17</p>
+                    <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+                    <p>Кафедра інформаційно-комунікаційних технологій No504</p>
+                </address>
+                <div class="contact-details">
+                    <div class="contact-block">
+                        <h3 class="contact-heading">Телефон</h3>
+                        <a href="tel:+380995025775" class="contact-link">+38 (099) 502-57-75</a>
+                    </div>
+                    <div class="contact-block">
+                        <h3 class="contact-heading">Socials</h3>
+                        <div class="social-links">
+                            <img src="images/telegram.svg" alt="telegram" title="Телеграм" class="social-icon">
+                            <img src="images/viber.svg" alt="viber" title="Вайбер" class="social-icon">
+                            <img src="images/fb.svg" alt="facebook" title="Фейсбук" class="social-icon">
+                            <img src="images/in.svg" alt="in" title="Ін" class="social-icon">
+                            <img src="images/instagram.svg" alt="instagram" title="Інстаграм" class="social-icon">
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <h3 class="contact-heading">Пошта</h3>
+                        <a href="mailto:k504@khai.edu" class="contact-link">k504@khai.edu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news-section">
+            <h2 class="section-title">Новини</h2>
+            <div class="news-container">
+                <div class="news-card">
+                    <h3 class="news-title">Перша</h3>
+                    <p class="news-text">1</p>
+                    <img src="images/image%201.png" alt="1" title="1">
+                </div>
+                <div class="news-card">
+                    <h3 class="news-title">Друга</h3>
+                    <p class="news-text">2</p>
+                    <img src="images/image%202.png" alt="2" title="2">
+                </div>
+                <div class="news-card">
+                    <h3 class="news-title">Третя</h3>
+                    <p class="news-text">3</p>
+                    <img src="images/image%203.png" alt="3" title="3">
+                </div>
+                <div class="news-card">
+                    <h3 class="news-title">Четверта</h3>
+                    <p class="news-text">4</p>
+                    <img src="images/image%204.png" alt="4" title="4">
+                </div>
+            </div>
+            <div class="media-container">
+                <video autoplay class="news-video">
+                    <source src="media/expl_MP4.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-block address-block">
+                <p>61070, Харків, вул. Вадима Манька, 17</p>
+                <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+                <p>Кафедра інформаційно-комунікаційних технологій No504</p>
+            </div>
+            <div class="footer-block logo-block">
+                <img src="images/logo.svg" alt="Логотип DICT" title="Логотип кафедри ІКТ" class="footer-logo">
+                <p class="copyright">© 2023 All rights reserved.</p>
+                <div class="footer-social-links">
+                    <img src="images/telegram.svg" alt="telegram" title="Телеграм" class="social-icon">
+                    <img src="images/viber.svg" alt="viber" title="Вайбер" class="social-icon">
+                    <img src="images/fb.svg" alt="facebook" title="Фейсбук" class="social-icon">
+                    <img src="images/in.svg" alt="in" title="LinkedIn" class="social-icon">
+                    <img src="images/instagram.svg" alt="instagram" title="Інстаграм" class="social-icon">
+                </div>
+            </div>
+            <div class="footer-block contact-block">
+                <a href="tel:+380995025775" class="footer-phone-link">+38 (099) 502-57-75</a>
+                <a href="mailto:k504@khai.edu" class="footer-email-link">k504@khai.edu</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
