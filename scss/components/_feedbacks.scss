@@ -1,0 +1,7 @@
+#testimonials {
+  .cards-wrapper {
+    .card {
+      @include card;
+    }
+  }
+}
