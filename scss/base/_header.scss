@@ -1,3 +1,138 @@
 header {
   padding: $base-padding 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
+
+.logo {
+  width: 104px;
+  height: auto;
+}
+
+.main-nav {
+  width: calc(100% - 292px);
+  flex: 1;
+
+  .nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .nav-item {
+      a {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+
+        &:hover {
+          color: var(--red-color);
+        }
+      }
+    }
+  }
+}
+
+.search {
+  width: 24px;
+  margin-left: auto;
+}
+
+.language-switcher {
+  width: 104px;
+  position: relative;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 38px;
+      height: 24px;
+      border-radius: 100px;
+      border: 1px solid #fff;
+      order: 2;
+      background: transparent;
+    }
+
+    li {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      color: var(--grey-color);
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: var(--grey-color);
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+
+        &.is-active {
+          color: #fff;
+        }
+      }
+
+      &.ua {
+        order: 1;
+
+        a::after {
+          content: '';
+          display: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: url("images/ukr.png") no-repeat center;
+          background-size: contain;
+          position: absolute;
+          top: 3px;
+          right: -31px;
+        }
+
+        a.is-active::after {
+          display: block;
+        }
+      }
+
+      &.en {
+        order: 3;
+
+        a::before {
+          content: '';
+          display: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: url("images/eng.png") no-repeat center;
+          background-size: contain;
+          position: absolute;
+          top: 3px;
+          left: -31px;
+        }
+
+        a.is-active::before {
+          display: block;
+        }
+      }
+    }
+  }
+}
+

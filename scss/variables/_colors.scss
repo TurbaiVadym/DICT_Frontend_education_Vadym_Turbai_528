@@ -5,6 +5,24 @@ $grey: #7c7c7c;
 $red: #ff3b39;
 $red-hover: #ff1a18;
 $silver: #bfbfbf;
+$white: #fff;
+
+$color-form-background: #1f1f1f;
+$color-input-background: #2c2c2c;
+$color-input-border: #444444;
+$color-glow-accent: #00bcd4;
+$color-placeholder: #a0a0a0;
+
+$color-dark-background: #121212;
+$color-section-background: #1f1f1f;
+$color-table-header-background: #525252;
+$color-table-row-background-even: #242424;
+$color-table-row-background-odd: #1f1f1f;
+$color-text-light: #f0f0f0;
+$color-border-dark: #444444;
+$color-glow-accent: #00bcd4;
+$color-checkbox-border: #888888;
+$color-checkbox-checked: $color-glow-accent;
 
 :root {
   --primary-color: #{$primary};
