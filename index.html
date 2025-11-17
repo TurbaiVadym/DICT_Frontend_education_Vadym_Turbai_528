@@ -10,6 +10,9 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
         <nav class="main-nav">
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#specialties">Спеціальності</a></li>
@@ -18,8 +21,10 @@
                 <li class="nav-item"><a href="#contact">Контакти</a></li>
             </ul>
         </nav>
+        <div class="search">
+            <a href="#"><img src="images/search.svg" alt="Пошук" title="Пошук" class="icon-search" width="30" height="30"></a>
+        </div>
         <div class="header-controls">
-            <img src="images/search.png" alt="Пошук" title="Пошук" class="icon-search" width="30" height="30">
             <div class="language-switcher">
                 <ul class="language-switcher">
                     <li class="eng"><a href="#"><img src="images/eng.png" alt="Англійська" title="Англійська" class="lang-eng" width="30" height="30"></a></li>
@@ -32,14 +37,19 @@
     <script src="js/main.js"></script>
     <main>
         <section id="banner" class="banner-section">
-            <h1 class="banner-title">Створюй майбутнє. Тут і зараз!</h1>
-            <p class="banner-text">
-                Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
-                Кафедра ІКТ ХАІ - це місце, де ідеї
-                стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій
-                шлях вже сьогодні!
-            </p>
-            <img src="images/banner.png" alt="Банер" title="Банер" class="banner-image">
+            <div class="content-wrapper">
+                <h1 class="banner-title">Створюй майбутнє. Тут і зараз!</h1>
+                <p class="banner-text">
+                    Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
+                    Кафедра ІКТ ХАІ - це місце, де ідеї
+                    стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій
+                    шлях вже сьогодні!
+                </p>
+                <div class="button-wrapper">
+                    <input class="button form-submit" type="submit" value="Хочу поступити">
+                </div>
+            </div>
+            <img src="images/man.png" alt="Банер" title="Банер" class="banner-image">
         </section>
 
         <section id="specialties" class="specialties-section">
@@ -53,18 +63,20 @@
             <div class="cards-wrapper">
                 <div class="card">
                     <h3 class="specialty-number">126</h3>
-                    <p class="specialty-name">Інформаційні системи і технології</p>
+                    <p class="specialty-name">«Інформаційні системи і технології»</p>
                 </div>
                 <div class="card">
                     <h3 class="specialty-number">172</h3>
-                    <p class="specialty-name">Електронні комунікації та радіотехніка</p>
+                    <p class="specialty-name">«Електронні комунікації та радіотехніка»</p>
                 </div>
             </div>
         </section>
 
         <section id="program" class="program-section">
-            <h2>Освітня програма спеціальності "Інжинирінг і програмування інфокомунікаційних систем"</h2>
-            <h3>1 Курс</h3>
+            <h2>Освітня програма спеціальності "Інжиніринг і програмування інфокомунікаційних систем"</h2>
+            <div class="course-heading">
+                <h3>1 Курс</h3>
+            </div>
             <div class="table-wrapper">
                 <table>
                     <thead>
@@ -184,7 +196,7 @@
                     <p class="in-number-text">Талановитих випускників</p>
                 </div>
                 <div class="card">
-                    <h3 class="in-number-value">Нескінченність</h3>
+                    <h3 class="in-number-value">Ꝏ</h3>
                     <p class="in-number-text">Унікального досвіду</p>
                 </div>
             </div>
@@ -194,9 +206,47 @@
             <h2 class="section-title">Відгуки випускників</h2>
             <div class="cards-wrapper">
                 <div class="card">
-                    <p class="review-text">"Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done."</p>
+                    <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
                     <div class="reviewer-info">
-                        <img src="images/feedback-1.png" alt="Аватар 1" class="reviewer-avatar">
+                        <div class="image-container">
+                            <img src="images/feedback-1.png" alt="Аватар 1" class="reviewer-avatar">
+                        </div>
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Firstname Lastname</p>
+                            <p class="reviewer-position">Position Title, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                    <div class="reviewer-info">
+                        <div class="image-container">
+                            <img src="images/feedback-2.png" alt="Аватар 2" class="reviewer-avatar">
+                        </div>
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Firstname Lastname</p>
+                            <p class="reviewer-position">Position Title, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                    <div class="reviewer-info">
+                        <div class="image-container">
+                            <img src="images/feedback-3.png" alt="Аватар 3" class="reviewer-avatar">
+                        </div>
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Firstname Lastname</p>
+                            <p class="reviewer-position">Position Title, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                    <div class="reviewer-info">
+                        <div class="image-container">
+                            <img src="images/feedback-1.png" alt="Аватар 4" class="reviewer-avatar">
+                        </div>
                         <div class="reviewer-details">
                             <p class="reviewer-name">Firstname Lastname</p>
                             <p class="reviewer-position">Position Title, Company Name</p>
@@ -206,37 +256,9 @@
                 <div class="card">
                     <p class="review-text">"Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done."</p>
                     <div class="reviewer-info">
-                        <img src="images/feedback-2.png" alt="Аватар 2" class="reviewer-avatar">
-                        <div class="reviewer-details">
-                            <p class="reviewer-name">Firstname Lastname</p>
-                            <p class="reviewer-position">Position Title, Company Name</p>
+                        <div class="image-container">
+                            <img src="images/feedback-2.png" alt="Аватар 2" class="reviewer-avatar">
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p class="review-text">"Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done."</p>
-                    <div class="reviewer-info">
-                        <img src="images/feedback-3.png" alt="Аватар 3" class="reviewer-avatar">
-                        <div class="reviewer-details">
-                            <p class="reviewer-name">Firstname Lastname</p>
-                            <p class="reviewer-position">Position Title, Company Name</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p class="review-text">"Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done."</p>
-                    <div class="reviewer-info">
-                        <img src="images/feedback-1.png" alt="Аватар 4" class="reviewer-avatar">
-                        <div class="reviewer-details">
-                            <p class="reviewer-name">Firstname Lastname</p>
-                            <p class="reviewer-position">Position Title, Company Name</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p class="review-text">"Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done."</p>
-                    <div class="reviewer-info">
-                        <img src="images/feedback-2.png" alt="Аватар 5" class="reviewer-avatar">
                         <div class="reviewer-details">
                             <p class="reviewer-name">Firstname Lastname</p>
                             <p class="reviewer-position">Position Title, Company Name</p>
@@ -264,7 +286,7 @@
                     саме тут це можливо.
                 </p>
                 <div class="cta-button-container">
-                    <a href="index.html">Дізнатись більше</a>
+                    <a href="index.html" class="button">Дізнатись більше</a>
                 </div>
             </div>
         </section>
@@ -272,12 +294,12 @@
         <section id="trust-us" class="trust-us-section">
             <h2 class="section-title">Нам довіряють</h2>
             <ul class="trust-us-logos">
-                <li><a href><img src="images/nix.svg" alt="nix logo" title="Логотип nix"></a></li>
-                <li><a href><img src="images/sigma.svg" alt="sigma logo" title="Логотип sigma"></a></li>
-                <li><a href><img src="images/gl.svg" alt="gl logo" title="Логотип gl"></a></li>
-                <li><a href><img src="images/epam.svg" alt="epam logo" title="Логотип epam"></a></li>
-                <li><a href><img src="images/softserve.svg" alt="softserve logo" title="Логотип softserve"></a></li>
-                <li><a href><img src="images/dataart.svg" alt="dataart logo" title="Логотип dataart"></a></li>
+                <li><a href="#"><img src="images/nix.svg" alt="nix logo" title="Логотип nix"></a></li>
+                <li><a href="#"><img src="images/sigma.svg" alt="sigma logo" title="Логотип sigma"></a></li>
+                <li><a href="#"><img src="images/gl.svg" alt="gl logo" title="Логотип gl"></a></li>
+                <li><a href="#"><img src="images/epam.svg" alt="epam logo" title="Логотип epam"></a></li>
+                <li><a href="#"><img src="images/softserve.svg" alt="softserve logo" title="Логотип softserve"></a></li>
+                <li><a href="#"><img src="images/dataart.svg" alt="dataart logo" title="Логотип dataart"></a></li>
             </ul>
         </section>
 
@@ -289,29 +311,29 @@
                     <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
                     <p>Кафедра інформаційно-комунікаційних технологій No504</p>
                 </div>
-                <div class="contact-details">
-                    <div class="phones">
-                        <h3 class="contact-heading">Телефон</h3>
-                        <p>+38 (057) 788-43-52</p>
-                        <p>+38 (099) 502-57-75</p>
-                        <p>в будні дні з 9-00 до 17-00</p>
-                    </div>
-                    <div class="social">
-                        <h3 class="contact-heading">Socials</h3>
-                        <ul class="social-links">
-                            <li class="telegram"><a><img src="images/telegram.svg" alt="telegram" title="Телеграм" class="social-icon"></a></li>
-                            <li class="viber"><a><img src="images/viber.svg" alt="viber" title="Вайбер" class="social-icon"></a></li>
-                            <li class="fb"><a><img src="images/fb.svg" alt="facebook" title="Фейсбук" class="social-icon"></a></li>
-                            <li class="in"><a><img src="images/in.svg" alt="in" title="LinkedIn" class="social-icon"></a></li>
-                            <li class="instagram"><a><img src="images/instagram.svg" alt="instagram" title="Інстаграм" class="social-icon"></a></li>
-                        </ul>
-                    </div>
-                    <div class="emails">
-                        <h3 class="contact-heading">Пошта</h3>
-                        <a href="mailto:k504@khai.edu" class="contact-link">k504@khai.edu</a>
-                        <a href="mailto:telecom.хаі@gmail.com" class="contact-link">telecom.хаі@gmail.com</a>
-                        <a href="mailto:PK@khaiu.edu" class="contact-link">PK@khaiu.edu</a>
-                    </div>
+            </div>
+            <div class="contact-details">
+                <div class="phones">
+                    <h3 class="contact-heading">Телефон</h3>
+                    <p class="phone-number">+38 (057) 788-43-52</p>
+                    <p class="phone-number">+38 (099) 502-57-75</p>
+                    <p>в будні дні з 9-00 до 17-00</p>
+                </div>
+                <div class="social">
+                    <h3 class="contact-heading">Socials</h3>
+                    <ul class="social-links">
+                        <li class="telegram"><a href="#"><img src="images/telegram.svg" alt="telegram" title="Телеграм" class="social-icon"></a></li>
+                        <li class="viber"><a href="#"><img src="images/viber.svg" alt="viber" title="Вайбер" class="social-icon"></a></li>
+                        <li class="fb"><a href="#"><img src="images/fb.svg" alt="facebook" title="Фейсбук" class="social-icon"></a></li>
+                        <li class="in"><a href="#"><img src="images/in.svg" alt="in" title="LinkedIn" class="social-icon"></a></li>
+                        <li class="instagram"><a href="#"><img src="images/instagram.svg" alt="instagram" title="Інстаграм" class="social-icon"></a></li>
+                    </ul>
+                </div>
+                <div class="emails">
+                    <h3 class="contact-heading">Пошта</h3>
+                    <a href="mailto:k504@khai.edu" class="contact-link">k504@khai.edu</a>
+                    <a href="mailto:telecom.хаі@gmail.com" class="contact-link">telecom.хаі@gmail.com</a>
+                    <a href="mailto:PK@khaiu.edu" class="contact-link">PK@khaiu.edu</a>
                 </div>
             </div>
         </section>
@@ -326,42 +348,42 @@
 
                     <div class="form-item form-type-textfield">
                         <label for="edit-first-name-last-name">Ваше ім'я та прізвище</label>
-                        <input type="text" id="edit-first-name-last-name" name="first-name-last-name" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text required" required="required" aria-required="true">
+                        <input type="text" id="edit-first-name-last-name" name="first-name-last-name" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text required" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="phone">Контактний телефон</label>
-                        <input type="text" id="phone" name="phone" value="" size="30" maxlength="128" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="phone" name="phone" value="" size="30" maxlength="128" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="email">Електронна пошта</label>
-                        <input type="email" id="email" name="email" value="" size="60" maxlength="255" placeholder="Your email address" class="form-text" required="required" aria-required="true">
+                        <input type="email" id="email" name="email" value="" size="60" maxlength="255" placeholder="Ваша пошта" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="telegram">Телеграм</label>
-                        <input type="text" id="telegram" name="telegram" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="telegram" name="telegram" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="nmt_math">Бали НМТ – Математика</label>
-                        <input type="text" id="nmt_math" name="nmt_math" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="nmt_math" name="nmt_math" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="nmt_ukr">Бали НМТ – Українська мова</label>
-                        <input type="text" id="nmt_ukr" name="nmt_ukr" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="nmt_ukr" name="nmt_ukr" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="nmt_hist">Бали НМТ – Історія України</label>
-                        <input type="text" id="nmt_hist" name="nmt_hist" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="nmt_hist" name="nmt_hist" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item">
                         <label for="nmt_choice">Четвертий предмет з НМТ і бали за ним</label>
-                        <input type="text" id="nmt_choice" name="nmt_choice" value="" size="60" maxlength="255" placeholder="Your answer" class="form-text" required="required" aria-required="true">
+                        <input type="text" id="nmt_choice" name="nmt_choice" value="" size="60" maxlength="255" placeholder="Ваша відповідь" class="form-text" required="required" aria-required="true">
                     </div>
 
                     <div class="form-item form-type-textarea" style="border-bottom: none;">
@@ -371,7 +393,7 @@
                         </div>
                     </div>
                     <div>
-                        <input class="button form-submit" type="submit" value="Submit">
+                        <input class="button form-submit" type="submit" value="Відправити">
                     </div>
                 </form>
             </div>
@@ -384,41 +406,39 @@
                 <div class="news-card">
                     <img src="images/image%201.png" alt="1" title="1">
                     <div class="content-wrapper">
-                        <h3 class="news-title">Перша</h3>
-                        <p class="news-text">1</p>
+                        <h3 class="news-title">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</h3>
+                        <p class="news-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                        <p class="news-date">9.09.2099</p>
                     </div>
                 </div>
 
                 <div class="news-card">
                     <img src="images/image%202.png" alt="2" title="2">
                     <div class="content-wrapper">
-                        <h3 class="news-title">Друга</h3>
-                        <p class="news-text">2</p>
+                        <h3 class="news-title">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</h3>
+                        <p class="news-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                        <p class="news-date">9.09.2099</p>
                     </div>
                 </div>
 
                 <div class="news-card">
                     <img src="images/image%203.png" alt="3" title="3">
                     <div class="content-wrapper">
-                        <h3 class="news-title">Третя</h3>
-                        <p class="news-text">3</p>
+                        <h3 class="news-title">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</h3>
+                        <p class="news-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                        <p class="news-date">9.09.2099</p>
                     </div>
                 </div>
 
                 <div class="news-card">
                     <img src="images/image%204.png" alt="4" title="4">
                     <div class="content-wrapper">
-                        <h3 class="news-title">Четверта</h3>
-                        <p class="news-text">4</p>
+                        <h3 class="news-title">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</h3>
+                        <p class="news-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                        <p class="news-date">9.09.2099</p>
                     </div>
                 </div>
 
-            </div>
-            <div class="media-container">
-                <video autoplay class="news-video">
-                    <source src="media/expl_MP4.mp4" type="video/mp4">
-                    Ваш браузер не підтримує відтворення відео.
-                </video>
             </div>
         </section>
     </main>
@@ -444,7 +464,8 @@
                 </div>
             </div>
             <div class="footer-block contact-block">
-                <a href="tel:+380995025775" class="footer-phone-link">+38 (099) 502-57-75</a>
+                <p class="footer-phone-link">+38 (057) 788-43-52</p>
+                <p class="footer-phone-link">+38 (099) 502-57-75</p>
                 <a href="mailto:k504@khai.edu" class="footer-email-link">k504@khai.edu</a>
             </div>
         </div>
