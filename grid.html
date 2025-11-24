@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Example</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Головна</a></li>
+                <li class="nav-item"><a href="#">Navigation Item 2</a></li>
+                <li class="nav-item"><a href="grid.html" class="active">Grid Layout</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <a href="#"><img src="images/search.svg" alt="Пошук" title="Пошук" class="icon-search" width="30" height="30"></a>
+        </div>
+
+        <div class="header-controls">
+            <div class="language-switcher">
+                <ul class="language-switcher">
+                    <li class="eng"><a href="#"><img src="images/eng.png" alt="Англійська" title="Англійська" class="lang-eng" width="30" height="30"></a></li>
+                    <li class="switcher"><a href="#"><img src="images/toggle.png" alt="Перемикач" title="Перемикач" class="lang-button" width="30" height="30"></a></li>
+                    <li class="ukr"><a href="#"><img src="images/ukr.png" alt="Українська" title="Українська" class="lang-ukr" width="30" height="30"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="page-content-wrapper">
+        <main class="main-content">
+            <h2 class="main-title">Основна частина сторінки</h2>
+            <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+
+            <div class="grid-container">
+                <section class="main-section">
+                    <h3>Основна частина сторінки</h3>
+                    <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+
+                    <h3 class="gallery-title">Цукерочки :3</h3>
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img alt="candy" src="images/Leo.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Mike.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Raf.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Don.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Leo.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Mike.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Raf.png">️</div>
+                        <div class="gallery-item"><img alt="candy" src="images/Don.png">️</div>
+                    </div>
+                </section>
+
+                <aside class="sidebar">
+                    <h3>Sidebar</h3>
+                    <div class="sidebar-item-wrapper">
+                        <div class="sidebar-item">
+                            <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                            <div class="sidebar-item-info">
+                                <div class="image-container">
+                                    <img src="images/feedback-1.png" alt="Аватар 1" class="reviewer-avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <p class="reviewer-name">Firstname Lastname</p>
+                                    <p class="reviewer-position">Position Title, Company Name</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <p class="review-text">Orifice ipsum you must be muted. Meat 1 shaped finish ipov last. Into company donuts apices knowledge. Price fellow data best done.</p>
+                            <div class="sidebar-item-info">
+                                <div class="image-container">
+                                    <img src="images/feedback-2.png" alt="Аватар 2" class="reviewer-avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <p class="reviewer-name">Firstname Lastname</p>
+                                    <p class="reviewer-position">Position Title, Company Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-block address-block">
+                <p>61070, Харків, вул. Вадима Манька, 17</p>
+                <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+                <p>Кафедра інформаційно-комунікаційних технологій No504</p>
+            </div>
+            <div class="footer-block logo-block">
+                <img src="images/logo.svg" alt="Логотип DICT" title="Логотип кафедри ІКТ" class="footer-logo">
+                <p class="copyright">© 2023 All rights reserved.</p>
+                <div class="footer-social-links">
+                    <ul>
+                        <li class="telegram"><a><img src="images/telegram.svg" alt="telegram" title="Телеграм" class="social-icon"></a></li>
+                        <li class="viber"><a><img src="images/viber.svg" alt="viber" title="Вайбер" class="social-icon"></a></li>
+                        <li class="fb"><a><img src="images/fb.svg" alt="facebook" title="Фейсбук" class="social-icon"></a></li>
+                        <li class="in"><a><img src="images/in.svg" alt="in" title="LinkedIn" class="social-icon"></a></li>
+                        <li class="instagram"><a><img src="images/instagram.svg" alt="instagram" title="Інстаграм" class="social-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-block contact-block">
+                <p class="footer-phone-link">+38 (057) 788-43-52</p>
+                <p class="footer-phone-link">+38 (099) 502-57-75</p>
+                <a href="mailto:k504@khai.edu" class="footer-email-link">k504@khai.edu</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
