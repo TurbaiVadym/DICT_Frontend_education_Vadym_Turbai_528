@@ -47,24 +47,27 @@ a {
 #banner {
   position: relative;
   margin: 0 0;
-  height: 720px;
+  height: 700px;
   display: flex;
   align-items: center;
   background: var(--primary-color);
   overflow: hidden;
 
   .content-wrapper {
-    width: 67%;
-    max-width: 800px;
+    width: 100%;
+    max-width: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     position: relative;
     z-index: 9;
-    padding-left: $base-padding;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
 
     h1 {
       margin: 0;
+      font-size: 2em;
     }
 
     .banner-text {
@@ -83,39 +86,74 @@ a {
     position: absolute;
     top: -80px;
     right: 0;
+    width: auto;
     height: 800px;
     z-index: 1;
   }
+
+  @media (min-width: $tablet-min-width) {
+    height: 720px;
+
+    .content-wrapper {
+      width: 60%;
+      max-width: 800px;
+    }
+
+    .banner-image {
+      display: block;
+      position: absolute;
+      top: -80px;
+      right: 0;
+      height: 800px;
+      width: 40%;
+      height: auto;
+      max-width: 500px;
+    }
+  }
+
 }
 
 #science {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   .image-container {
-    display: flex;
-    min-width: 50%;
-    width: 50%;
-    justify-content: center;
+    min-width: 100%;
+    width: 100%;
 
     img {
-      flex: 1;
       width: 100%;
-      max-width: 100%;
       height: auto;
-      display: block;
+      max-width: 100%;
     }
   }
 
   .science-container {
-    flex: 1;
-    min-width: 200px;
-    max-width: 50%;
+    min-width: 100%;
+    max-width: 100%;
   }
+
+  @media (min-width: $tablet-min-width) {
+    flex-direction: row; // Дво-колонковий макет
+    flex-wrap: wrap;
+    align-items: center;
+
+    .image-container {
+      // Зображення 45% (Приклад використання %)
+      min-width: 45%;
+      width: 45%;
+    }
+
+    .science-container {
+      // Контент 50%
+      flex: 1;
+      min-width: 45%;
+      max-width: 50%;
+    }
+  }
+
 }
 
 #trust-us {
@@ -137,12 +175,23 @@ a {
     justify-content: center;
 
     li {
-      margin: 20px 40px;
+      margin: 15px 20px;
 
       a{
         text-decoration: none;
       }
+
+      img {
+        max-width: 100px;
+        height: auto;
+      }
     }
+  }
+}
+
+@media (min-width: 796px) {
+  #trust-us .trust-us-logos li {
+    margin: 20px 40px;
   }
 }
 
@@ -150,6 +199,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   .section-title {
    margin: 0 0 25px 0;
@@ -170,10 +220,10 @@ a {
 
 .contact-details {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
 
   .phones,
@@ -182,13 +232,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 180px;
-    margin: 0 10px;
+    min-width: 100%;
+    margin: 10px 0;
+
+    p, a {
+      text-align: center;
+    }
   }
 
   .phones .phone-number {
     color: var(--red-color);
-    font-size: 15px;
+
     margin: 4px 0;
     font-weight: 500;
   }
@@ -196,7 +250,7 @@ a {
   .phones {
 
     p {
-      font-size: 15px;
+
       margin: 4px 0;
       font-weight: 500;
     }
@@ -204,7 +258,7 @@ a {
 
   .emails a {
     color: var(--red-color);
-    font-size: 15px;
+
     text-decoration: none;
     margin: 6px 0;
     display: block;
@@ -244,4 +298,20 @@ a {
 
 }
 
+  @media (min-width: $tablet-min-width) {
+    .contact-details {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      .phones,
+      .social,
+      .emails {
+        min-width: 30%;
+        max-width: 30%;
+        margin: 0 10px;
+      }
+    }
+  }
 }

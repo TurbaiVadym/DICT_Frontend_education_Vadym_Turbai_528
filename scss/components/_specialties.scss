@@ -1,27 +1,65 @@
 #specialties {
   .cards-wrapper {
     margin-top: 30px;
+
     .card {
       @include card;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
       text-align: center;
-      flex: 1;
+      width: 80%;
       min-width: 200px;
       max-width: 350px;
       border: 2px solid #7c7c7c;
 
       h3 {
-        font-size: 60px;
-        margin: 30px 0 0 0;
+        margin: 0;
         text-align: left;
       }
 
       p {
-        font-size: 25px;
         text-align: left;
         margin: 0 0;
         color: #ccc;
       }
     }
+  }
+}
+
+@media (min-width: 796px) {
+  #specialties .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #specialties .cards-wrapper .card {
+    width: 40%;
+    max-width: 30%;
+    height: 140px;
+
+    h3 {
+      margin: 0;
+      text-align: left;
+    }
+
+  }
+}
+
+@media (min-width: 1200px) {
+  #specialties .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #specialties .cards-wrapper .card {
+    width: 40%;
+    max-width: 30%;
+    height: 140px;
+
+    h3 {
+      margin: 0;
+      text-align: left;
+    }
+
   }
 }

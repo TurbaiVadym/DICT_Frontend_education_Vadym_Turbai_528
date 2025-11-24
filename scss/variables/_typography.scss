@@ -1,9 +1,38 @@
 $base-padding: 20px;
 
+$font-size-base: 14px;
+$line-height-base: 1.4;
+
+$h1-font-size: 28px;
+$h2-font-size: 26px;
+$h3-font-size: 24px;
+$h4-font-size: 22px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+
+$tablet-min-width: 796px;
+$tablet-font-size-base: 16px;
+$tablet-h1-font-size: 32px;
+$tablet-h2-font-size: 28px;
+$tablet-h3-font-size: 26px;
+$tablet-h4-font-size: 24px;
+$tablet-h5-font-size: 22px;
+$tablet-h6-font-size: 20px;
+
+$desktop-min-width: 1200px;
+$desktop-font-size-base: 16px;
+$desktop-h1-font-size: 36px;
+$desktop-h2-font-size: 32px;
+$desktop-h3-font-size: 30px;
+$desktop-h4-font-size: 28px;
+$desktop-h5-font-size: 24px;
+$desktop-h6-font-size: 22px;
+
 body {
-  font-size: 14px;
+  font-size: $font-size-base;
   font-family: $comfortaa;
   color: var(--primary-text-color);
+  line-height: $line-height-base;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -12,30 +41,47 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $geologica;
 }
 
-h1, .h1 {
-  font-size: 38px;
-}
-h2, .h2 {
-  font-size: 32px;
-}
-h3, .h3 {
-  font-size: 28px;
-}
-h4, .h4 {
-  font-size: 24px;
-}
-h5, .h5 {
-  font-size: 18px;
-}
-
-h6, .h6 {
-  font-size: 16px;
-}
+h1, .h1 { font-size: $h1-font-size; }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size; }
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
 
 .p, p {
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   margin: 12px 0;
+}
+
+@media (min-width: $tablet-min-width) {
+  body {
+    font-size: $tablet-font-size-base;
+  }
+  .p, p {
+    font-size: $tablet-font-size-base;
+  }
+  h1, .h1 { font-size: $tablet-h1-font-size; }
+  h2, .h2 { font-size: $tablet-h2-font-size; }
+  h3, .h3 { font-size: $tablet-h3-font-size; }
+  h4, .h4 { font-size: $tablet-h4-font-size; }
+  h5, .h5 { font-size: $tablet-h5-font-size; }
+  h6, .h6 { font-size: $tablet-h6-font-size; }
+}
+
+@media (min-width: $desktop-min-width) {
+  body {
+    font-size: $desktop-font-size-base;
+  }
+  .p, p {
+    font-size: $desktop-font-size-base;
+  }
+  h1, .h1 { font-size: $desktop-h1-font-size; }
+  h2, .h2 { font-size: $desktop-h2-font-size; }
+  h3, .h3 { font-size: $desktop-h3-font-size; }
+  h4, .h4 { font-size: $desktop-h4-font-size; }
+  h5, .h5 { font-size: $desktop-h5-font-size; }
+  h6, .h6 { font-size: $desktop-h6-font-size; }
 }
 
 .small, small {
@@ -67,3 +113,4 @@ strong {
 em {
   font-style: italic;
 }
+
