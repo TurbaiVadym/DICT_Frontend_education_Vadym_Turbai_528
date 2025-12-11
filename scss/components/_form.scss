@@ -3,29 +3,32 @@
   background-color: $color-form-background;
   padding: 0;
   display: flex;
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid red;
 
   .image-wrapper {
-    flex: 1;
     display: flex;
+    order: 1;
     justify-content: flex-end;
 
     .form-image {
       width: 100%;
       height: auto;
+      object-fit: contain;
     }
   }
 
   .form-wrapper {
-    flex: 1;
+    order: 2;
+    width: 90%;
     max-width: 450px;
-    padding: 20px 0 20px 40px;
+    padding: 20px 5%;
   }
 
-  .form-title {
-    font-size: 32px;
+  h2 {
     color: $color-text-light;
     text-align: start;
     margin-bottom: 10px;
@@ -42,7 +45,7 @@
     label {
       display: block;
       color: $color-text-light;
-      font-size: 12px;
+
       margin-bottom: 5px;
     }
 
@@ -55,11 +58,10 @@
       color: $color-text-light;
       border: 1px solid $color-input-border;
       border-radius: 4px;
-      font-size: 14px;
+
       box-sizing: border-box;
       transition: border-color 0.3s, box-shadow 0.3s;
 
-      // Placeholder style
       &::placeholder {
         color: $color-placeholder;
         opacity: 0.8;
@@ -71,5 +73,30 @@
       resize: vertical;
       min-height: 100px;
     }
+  }
+
+  .form-section .image-wrapper {
+    flex: none;
+  }
+}
+
+@media (min-width: 796px) {
+
+  .form-section {
+
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .image-wrapper {
+    order: 1;
+    flex: 1;
+  }
+
+  .form-wrapper {
+    order: 2;
+    flex: 1;
+    max-width: 450px;
+    padding: 20px 40px 20px 40px;
   }
 }
