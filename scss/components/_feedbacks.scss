@@ -1,10 +1,73 @@
 #testimonials {
+  position: relative;
+  padding: 0 25px;
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+
+    /* Центрування */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    transition: background-color 0.3s;
+
+    /* Прибираємо дефолтні стрілки */
+    &::before {
+      display: none !important;
+      content: '' !important;
+    }
+
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+
+    i {
+      font-size: 60px;
+      line-height: 0;
+      display: block;
+    }
+  }
+
+  .slick-prev {
+    left: -40px;
+    i { transform: translateX(-1px); }
+  }
+
+  .slick-next {
+    right: -40px;
+    i { transform: translateX(2px); }
+  }
+
   .cards-wrapper {
     display: flex;
-    flex-direction: column; // Одна колонка
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
+
+    &.slick-initialized {
+      display: block;
+      gap: 0;
+
+      .card {
+        width: auto;
+        max-width: none;
+        flex: none;
+        margin: 0 15px;
+        height: auto;
+      }
+    }
 
     .card {
       @include card;
@@ -16,53 +79,73 @@
       max-width: 400px;
       border: 2px solid $grey;
       background-color: #474747;
+      box-sizing: border-box;
 
       .reviewer-info {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         .image-container {
           display: flex;
-          flex-direction: row;
           align-items: center;
           margin-right: 10px;
-          width: 25%;
+          width: 50px;
+
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+          }
+        }
+
+        .reviewer-details {
+          text-align: right;
+          flex: 1;
         }
       }
 
       .reviewer-name {
         font-weight: 700;
+        margin-bottom: 5px;
       }
 
-      p {
+      .reviewer-position {
+        font-size: 12px;
+        color: #aaa;
+        margin: 0;
+      }
+
+      .review-text {
         font-size: 14px;
         text-align: left;
         margin: 0 0;
         color: #ccc;
+        min-height: 80px;
       }
     }
   }
 }
 
 @media (min-width: 796px) {
-  #testimonials .cards-wrapper {
+  #testimonials .cards-wrapper:not(.slick-initialized) {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  #testimonials .cards-wrapper .card {
-    width: 48%;
-    max-width: 350px;
+
+    .card {
+      width: 48%;
+      max-width: 350px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-  #testimonials .cards-wrapper {
-    flex-wrap: wrap;
-  }
-  #testimonials .cards-wrapper .card {
-    width: 30%;
-    max-width: 380px;
+  #testimonials .cards-wrapper:not(.slick-initialized) {
+    .card {
+      width: 30%;
+      max-width: 380px;
+    }
   }
 }
